@@ -1,0 +1,201 @@
+<!--21may Imtahan-->
+
+<html>
+<head>
+	<title> </title>
+	<script src="main.js"></script>
+	
+	<style>
+	.first{
+	padding:50px 112px;}
+	
+	.header{
+	border:0px solid #b71c1c;
+	width:100%;
+	height:50px;
+	text:center;
+	color:#b71c1c;
+	}
+	.imageBorder{
+	border:1px solid gray;
+	width:100%;
+	height:400px;
+	margin-top:50px; 
+	
+	}
+	
+	
+	.nadpis{
+	border:1px solid yellow;
+	height:50px;
+	width:100%;
+	margin-top:350px;
+	background:red;
+	}
+	
+	.textElave{
+	margin-top:15px;
+	}
+	.textElave input{
+	width:100%;
+	height:50px;
+	border:1px solid gray;}
+	
+	.textdeyish{
+		width:20%;
+		height:40px;
+		background-color:red;
+		color:white;
+		float:right;
+	}
+	 .shekliDeyish{
+	 margin-top:100px;}
+	 
+	 .shekliDeyish input{
+	 width:100%;
+	height:50px;
+	border:1px solid gray;
+	 }
+	 
+	 .shekil{
+	 margin-top:10px;
+	 width:20%;
+		height:40px;
+		background-color:red;
+		color:white;
+		float:right;}
+		
+		
+		.button{
+		margin-top:90px;
+		display:inline-block;
+		}
+		
+		.button button{
+		margin:10px;
+		background:red;
+		width:250px;
+		height:40px;
+		color:white;}	
+	</style>
+	
+	
+
+
+
+
+</head>
+<body>
+
+
+	<div class="container-fluid first">
+	<!-- header-->
+		<div class="container header">
+			  <div class="row ">
+			  
+			  <h3>MY CAPS MAKER</h3>
+			  </div>
+		</div>
+		
+	<!--Image container-->
+		<div class ="imageBorder">
+			<div class="nadpis">
+			
+				<h3>Bu yazini deyishe bilersiniz</h3>
+			
+			</div>
+		
+		
+		</div>
+		
+	<!--Text elave etmek-->
+		
+		<div class="container textElave">
+			  <div class="row">
+					<input class="form-control" type="text" placeholder="Text elave edin">
+			  </div>
+		</div>
+		
+		<div class="container textElave">
+			  <div class="row">
+					<button class="textdeyish">Texti deyish</button>
+			  </div>
+		</div>
+		
+		
+		<!--Shekil Deyishmek-->
+		
+		<div class="container shekliDeyish ">
+			  <div class="row">
+			  <div class="col-md-12">
+					<input class="form-control" type="text" placeholder="Text elave edin">
+					</div>
+			  </div>
+		</div>
+		
+		<div class="container sekliDeyish">
+			  <div class="row">
+			  <div class="col-md-12">
+					<button class="shekil">Shekil Deyishmek</button>
+				</div>	
+			  </div>
+		</div>
+		
+		<!--Button-->
+		
+			<div class="container button">
+						<div class="row">
+					<div class="col-md-12">
+					 <button onclick="myFunction()" class="effect1" >Button</button>
+					 <button onclick="secondFunction()" class="effect2" >Button2</button>
+					  <button onclick="secondFunction()" class="effect3" >Button2</button>
+					   <button onclick="secondFunction()" class="effect3" >Button2</button>
+					</div>
+				  </div>
+				</div>
+		
+		
+		
+
+	</div>
+
+  
+  <script>
+  
+ /*birinci button yegane ishleyen Button*/
+ 
+function myFunction() {
+    var a = document.getElementsByClassName("imageBorder")[0];
+    a.style.border = "15px solid gray";
+}
+
+/* ikinci button*/
+
+
+/*bu ise ishlemir*/
+function secondFunction(){
+
+	var b = document.getElementByClassName("nadpis")[1];
+	b.style.background="blue";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+ 
+  </script>
+  
+ 
+ 
+</body>
+</html>
